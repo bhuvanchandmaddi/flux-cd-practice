@@ -16,8 +16,7 @@ spec:
       author:
         name: flux-bot
         email: flux@example.com
-      messageTemplate: |
-        automated update of podInfo image to {{ .Image.Repository }}:{{ .Image.Tag }}
+      messageTemplate: "{{range .Updated.Images}}{{println .}}{{end}}"
     push:
       branch: flux-automated-upgrade
   update:
