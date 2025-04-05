@@ -5,7 +5,7 @@ metadata:
   namespace: team-helm
 spec:
   interval: 10m
-  releasename: pod-info
+  releaseName: pod-info
   chart:
     spec:
       chart: podinfo
